@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{90405723-E34C-47C1-A67A-5D5A799AA002}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Otel</RootNamespace>
+    <AssemblyName>Otel</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\OneDrive\Desktop\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs" />
+    <Compile Include="AdminMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMenu.Designer.cs">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMusteriIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMusteriIslemleri.Designer.cs">
+      <DependentUpon>AdminMusteriIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminOdaislemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminOdaislemleri.Designer.cs">
+      <DependentUpon>AdminOdaislemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPersonelIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPersonelIslemleri.Designer.cs">
+      <DependentUpon>AdminPersonelIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRaporMenusu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminRaporMenusu.Designer.cs">
+      <DependentUpon>AdminRaporMenusu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRaporSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminRaporSayfasi.Designer.cs">
+      <DependentUpon>AdminRaporSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltmisGunOnceRez.cs" />
+    <Compile Include="Bilgilerim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bilgilerim.Designer.cs">
+      <DependentUpon>Bilgilerim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs" />
+    <Compile Include="DataBase.cs" />
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KlasikRez.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteri.cs" />
+    <Compile Include="MusteriAnaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriAnaMenu.Designer.cs">
+      <DependentUpon>MusteriAnaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriRez2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriRez2.Designer.cs">
+      <DependentUpon>MusteriRez2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyRezervasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyRezervasyon.Designer.cs">
+      <DependentUpon>MyRezervasyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odeme.cs" />
+    <Compile Include="OdemeFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdemeFormu.Designer.cs">
+      <DependentUpon>OdemeFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnayFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnayFormu.Designer.cs">
+      <DependentUpon>OnayFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnOdemeliRez.cs" />
+    <Compile Include="OtelBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtelBilgileri.Designer.cs">
+      <DependentUpon>OtelBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel.cs" />
+    <Compile Include="PersonelLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelLogin.Designer.cs">
+      <DependentUpon>PersonelLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelMenu.Designer.cs">
+      <DependentUpon>PersonelMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelRaporSayfası.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelRaporSayfası.Designer.cs">
+      <DependentUpon>PersonelRaporSayfası.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rezervasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rezervasyon.Designer.cs">
+      <DependentUpon>Rezervasyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TesvikRez.cs" />
+    <EmbeddedResource Include="AdminMenu.resx">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMusteriIslemleri.resx">
+      <DependentUpon>AdminMusteriIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminOdaislemleri.resx">
+      <DependentUpon>AdminOdaislemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPersonelIslemleri.resx">
+      <DependentUpon>AdminPersonelIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminRaporMenusu.resx">
+      <DependentUpon>AdminRaporMenusu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminRaporSayfasi.resx">
+      <DependentUpon>AdminRaporSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bilgilerim.resx">
+      <DependentUpon>Bilgilerim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriAnaMenu.resx">
+      <DependentUpon>MusteriAnaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriRez2.resx">
+      <DependentUpon>MusteriRez2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyRezervasyon.resx">
+      <DependentUpon>MyRezervasyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdemeFormu.resx">
+      <DependentUpon>OdemeFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnayFormu.resx">
+      <DependentUpon>OnayFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtelBilgileri.resx">
+      <DependentUpon>OtelBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelLogin.resx">
+      <DependentUpon>PersonelLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelMenu.resx">
+      <DependentUpon>PersonelMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelRaporSayfası.resx">
+      <DependentUpon>PersonelRaporSayfası.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Rezervasyon.resx">
+      <DependentUpon>Rezervasyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\christmas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\board.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-christmas-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-identity-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mail-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mail-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-badge-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-name-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-name-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-password-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-reserve-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-reserve-100 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-reservation-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-phone-squared-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-account-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-male-user-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-admin-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mastercard-48.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
